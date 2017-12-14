@@ -8,6 +8,29 @@ package by.it.liulis.lesson05;
 */
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TaskB1 {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        initArray(list);
+        System.out.println(list.size());
+        showArray(list);
+    }
+
+    private static void initArray(List<String> list) {
+        list.add("One");
+        list.add("Two");
+        list.add("Three");
+        list.add("Four");
+        list.add("Five");
+    }
+
+    private static void showArray(List<String> list) {
+        for (String str : list) {
+            System.out.printf("%s\n", str);
+        }
+    }
 
 }

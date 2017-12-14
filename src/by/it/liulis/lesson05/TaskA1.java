@@ -24,6 +24,28 @@ package by.it.liulis.lesson05;
 */
 
 
-public class TaskA1 {
+import java.util.Scanner;
 
+public class TaskA1 {
+    public static void main(String[] args) {
+
+        int x = 10;
+        int[] array = new int[x];
+        initArray(array);
+        showArray(array);
+
+    }
+
+    public static void initArray(int[] array) {
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < array.length; i++) {
+            array[i] = scanner.nextInt();
+        }
+    }
+
+    public static void showArray(int[] arrray) {
+        for (int i = arrray.length - 1; i >= 0; i--) {
+            System.out.printf("%s\n", arrray[i]);
+        }
+    }
 }
